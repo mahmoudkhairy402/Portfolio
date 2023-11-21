@@ -9,7 +9,7 @@ function Home() {
   <h3 class="name-title">Hello, my name is <span class="last-name">mahmoud khairy</span></h3>
 `;
   const desc = `
-  <span class="desc">I'm a software engineer with a keen interest in web development, specializing in frontend technologies like ReactJS to create dynamic and user-friendly interfaces. Let's bring your ideas to life!</span>
+  <span class="desc">I'm a software engineer with a keen interest in web development, specializing in frontend development , ReactJS to create dynamic and user-friendly interfaces. Let's bring your ideas to life!</span>
   `;
   return (
     <>
