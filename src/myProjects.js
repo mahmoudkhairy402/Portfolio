@@ -108,7 +108,7 @@ export const myProjects = [
     projectImg: require("./Images/portfolioImg.png"),
     projectDesc: "Awesome portfolio using reactjs ",
     projectLink: "https://portfolio-react-3666b.web.app",
-    rebo: "https://github.com/mahmoudkhairy402/prayer-timing",
-    category: ["mui", "react"],
+    rebo: "https://github.com/mahmoudkhairy402/Portfolio",
+    category: ["react"],
   },
 ];
