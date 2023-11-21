@@ -1,0 +1,142 @@
+.work {
+  max-width: 100%;
+  min-height: calc(100vh - 85px);
+}
+
+.breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.breadcrumb-item {
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.card {
+  position: relative;
+  width: 270px;
+  height: 310px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 4px var(--light-color);
+  transition: 0.3s;
+}
+
+.card-content {
+  position: absolute;
+  width: 270px;
+  height: 310px;
+  z-index: 2;
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  color: var(--light-color);
+}
+
+.card-content .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: transparent; */
+}
+.card-content .content .project-title {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.card-content .content .project-desc {
+  font-size: 16px;
+  max-height: 45px;
+  overflow: hidden;
+  opacity: 0.7;
+  padding: 0px 5px;
+}
+
+.card-content .content .links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-content .content .links a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+.card-content .content .links a svg {
+  fill: var(--light-color);
+  width: 24px;
+  height: 24px;
+}
+.card-content .content .links a:hover svg {
+  fill: var(--main-color);
+}
+.card-content .content .links .more-link {
+  color: var(--light-color);
+  transition: 0.2s;
+}
+.card-content .content .links .more-link:hover {
+  color: var(--main-color);
+  letter-spacing: 0.4px;
+}
+.card .blob {
+  position: absolute;
+  z-index: 100;
+  top: 80%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  opacity: 1;
+  filter: blur(66px);
+  animation: blob-bounce 2s infinite ease alternate;
+  transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+}
+
+.card:hover {
+  transform: translate(5px, 5px) rotate(4deg) scale(1.06);
+  transform-origin: 100%;
+}
+.card:hover .image img {
+  transform: rotate(3deg) scale(1.2);
+  /* transform: scale(1.2); */
+}
+
+.card-content .image {
+  max-width: 100%;
+  height: 40%;
+  overflow: hidden;
+  text-align: center;
+}
+.card-content .image img {
+  width: 100%;
+  height: auto;
+  background-color: red;
+  transition: 0.3s;
+}

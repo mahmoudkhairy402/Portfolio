@@ -1,0 +1,97 @@
+.about {
+  width: 100%;
+  min-height: calc(100vh - 85px);
+}
+
+.about .image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.about .image img {
+  width: 100%;
+  transform: scale(1.3);
+}
+
+.about .content {
+  background-color: var(--dark-color);
+  box-shadow: 0px 0px 1px 1px var(--light-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+.about .content .info .about-me {
+  font-size: 14px;
+}
+.about .content .info .download-cv {
+  margin-top: 20px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  border: none;
+  padding: 5px 15px;
+  transition: 0.2s;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.about .content .info .download-cv:hover {
+  background-color: transparent !important;
+  border: 1px solid var(--light-color);
+}
+.light .download-cv:hover {
+  color: #000;
+}
+.about .content .bars {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about .content .bars .Frontend .bar,
+.about .content .bars .UI .bar {
+  width: 100%;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 4px;
+  position: relative;
+  background-color: var(--light-color);
+}
+
+.about .content .bars .Frontend .bar::after,
+.about .content .bars .UI .bar::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 4px 0px 0px 4px;
+  box-shadow: 0px 0px 4px 1px var(--light-color);
+}
+.about .content .bars .Frontend .bar::after {
+  background-color: var(--dark-blue-color);
+  width: 90%;
+}
+
+.about .content .bars .UI .bar::after {
+  background-color: var(--light-blue-color);
+  width: 60%;
+}
+
+/* before */
+.about .content .bars .Frontend .bar::before,
+.about .content .bars .UI .bar::before {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  height: 100%;
+  border-radius: 4px 0px 0px 4px;
+}
+.about .content .bars .Frontend .bar::before {
+  content: "80%";
+}
+
+.about .content .bars .UI .bar::before {
+  content: "60%";
+}

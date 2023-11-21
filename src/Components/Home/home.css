@@ -1,0 +1,115 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 300px;
+  margin-bottom: 20px;
+
+  /* background-color: #fdf; */
+}
+
+.image img {
+  max-width: 100%;
+}
+
+.name-title {
+  text-transform: capitalize;
+}
+.name-title .last-name {
+  color: var(--main-color);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+}
+.home .desc {
+  font-size: 16px;
+  text-transform: capitalize;
+  max-width: 300px;
+  text-align: center;
+  color: var(--gray-color);
+}
+
+.intro {
+  max-width: 60%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .intro {
+    min-width: 100%;
+  }
+}
+
+.social-icons {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.hire-me {
+  margin-top: 20px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  border: none;
+  padding: 5px 15px;
+  transition: 0.2s;
+  background-color: var(--main-color);
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.3s;
+}
+.hire-me:hover {
+  background-color: transparent !important;
+  border: 1px solid var(--light-color);
+}
+
+.light .hire-me:hover {
+  color: #000;
+}
+
+.scroll-down {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.scroll-down-icon {
+  width: 15px;
+  height: 20px;
+  border: 1px solid var(--light-color);
+  margin: auto;
+  border-radius: 8px;
+  position: relative;
+}
+.scroll-down-icon::after {
+  content: "";
+  position: absolute;
+  background-color: var(--light-color);
+  left: 50%;
+  top: 10%;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  transform: translate(-50%, -10%);
+  animation: scroll-down-animation 0.6s infinite alternate;
+}
+
+@keyframes scroll-down-animation {
+  0% {
+    transform: translate(-50%, 0%);
+  }
+  50% {
+    transform: translate(-50%, 100%);
+  }
+  10% {
+    transform: translate(-50%, 0%);
+  }
+}
