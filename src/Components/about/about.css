@@ -16,7 +16,6 @@
 
 .about .content {
   background-color: var(--dark-color);
-  box-shadow: 0px 0px 1px 1px var(--light-color);
   padding: 20px;
   border-radius: 8px;
 }
@@ -52,30 +51,32 @@
 .about .content .bars .Frontend .bar,
 .about .content .bars .UI .bar {
   width: 100%;
-  height: 10px;
+  height: 20px;
   background-color: transparent;
   border-radius: 4px;
   position: relative;
-  background-color: var(--light-color);
+  background-color: var(--bg-color);
+  overflow: hidden;
 }
 
-.about .content .bars .Frontend .bar::after,
-.about .content .bars .UI .bar::after {
+.about .content .bars .Frontend .bar .after,
+.about .content .bars .UI .bar .after {
   position: absolute;
   content: "";
   left: 0;
   top: 0;
-  height: 100%;
+  height: 20px;
   border-radius: 4px 0px 0px 4px;
-  box-shadow: 0px 0px 4px 1px var(--light-color);
+  box-shadow: 0px 0px 4px 1px var(--main-color);
+  background-color: var(--main-color);
 }
-.about .content .bars .Frontend .bar::after {
-  background-color: var(--dark-blue-color);
+.about .content .bars .Frontend .bar .after {
+  /* background-color: var(--dark-blue-color); */
   width: 90%;
 }
 
-.about .content .bars .UI .bar::after {
-  background-color: var(--light-blue-color);
+.about .content .bars .UI .bar .after {
+  /* background-color: var(--light-blue-color); */
   width: 60%;
 }
 
@@ -83,10 +84,15 @@
 .about .content .bars .Frontend .bar::before,
 .about .content .bars .UI .bar::before {
   position: absolute;
-  right: 0;
-  bottom: 25px;
+  left: 20px;
+  top: 50%;
+  transform: translatey(-50%);
   height: 100%;
+  z-index: 10;
   border-radius: 4px 0px 0px 4px;
+  font-size: 14px;
+  animation: ease-in-out;
+  color: #fff;
 }
 .about .content .bars .Frontend .bar::before {
   content: "80%";

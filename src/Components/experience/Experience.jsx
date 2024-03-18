@@ -7,7 +7,7 @@ function Experience() {
       <div className="main-title" id="experience">
         Experience
       </div>
-      <Fade duration={2000}>
+      <Fade duration={2000} delay={200}>
         <div className="container experience  d-flex justify-content-center align-items-center">
           <div className="row justify-content-between align-items-center gap-sm-1">
             <div className="experience-information col-12 col-md-6">

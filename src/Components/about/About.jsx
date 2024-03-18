@@ -1,7 +1,7 @@
 import React from "react";
 import "../about/about.css";
 import { saveAs } from "file-saver";
-import { Fade, Roll } from "react-awesome-reveal";
+import { Fade, Roll, Slide } from "react-awesome-reveal";
 import localPdfFile from "../../assets/resume.pdf"; // Import your PDF file
 
 function About() {
@@ -27,10 +27,10 @@ function About() {
             </Roll>
 
             <div
-              className="content row col-sm-12 col-md-7"
-              style={{ height: "300px" }}
+              className="content d-flex align-items-center justify-content-between row col-sm-12 col-md-8"
+              style={{ minHeight: "400px" }}
             >
-              <div className="info col-5">
+              <div className="info cok-12 col-md-6">
                 <p
                   className="about-me"
                   style={{
@@ -56,21 +56,26 @@ function About() {
                   your digital projects to life with innovation and efficiency.
                   Let's join forces and create something extraordinary together!
                 </p>
-                <div
-                  className="download-cv btn btn-danger"
-                  onClick={handleDownloadCV}
-                >
+                <div className="butn  " onClick={handleDownloadCV}>
                   Download Cv
                 </div>
               </div>
-              <div className="bars col-7">
-                <div className="Frontend">
+              <div className="bars col-12 col-md-5 mt-sm-5 mt-0">
+                <div className="Frontend mb-5">
                   <h6>Frontend</h6>
-                  <div className="bar"></div>
+                  <div className="bar ">
+                    <Slide duration={1000} direction="left" delay={200}>
+                      <span className="after"></span>
+                    </Slide>
+                  </div>
                 </div>
-                <div className="UI">
+                <div className="UI mb-5">
                   <h6>UI/UX</h6>
-                  <div className="bar"></div>
+                  <div className="bar  ">
+                    <Slide duration={1000} direction="left" delay={200}>
+                      <span className="after"></span>
+                    </Slide>
+                  </div>
                 </div>
               </div>
             </div>

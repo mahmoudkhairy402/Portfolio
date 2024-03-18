@@ -20,8 +20,8 @@
 body {
   font-family: "Rubik", sans-serif;
   background-color: var(--bg-color);
-
   color: var(--light-color);
+  transition: 0.3s;
 }
 
 * {
@@ -100,4 +100,49 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
   border-radius: 2px;
+}
+
+.butn {
+  margin-top: 20px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  background-color: rgba(145, 43, 34, 0.852) !important;
+  z-index: 1;
+  overflow: hidden;
+}
+.butn::after {
+  content: "";
+  transition: 0.3s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ab4238;
+  width: 0;
+  height: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.butn:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  /* background-color: #12486b; */
+}
+
+.light .butn::after {
+  background-color: var(--main-color);
+}
+a {
+  text-decoration: none;
 }
