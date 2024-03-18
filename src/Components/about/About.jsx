@@ -71,7 +71,7 @@ function About() {
                 </div>
                 <div className="UI mb-5">
                   <h6>UI/UX</h6>
-                  <div className="bar  ">
+                  <div className="bar">
                     <Slide duration={1000} direction="left" delay={200}>
                       <span className="after"></span>
                     </Slide>

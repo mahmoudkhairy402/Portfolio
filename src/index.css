@@ -136,8 +136,7 @@ html {
 .butn:hover::after {
   width: 100%;
   height: 100%;
-  opacity: 0.7;
-  /* background-color: #12486b; */
+  opacity: 0.5;
 }
 
 .light .butn::after {
