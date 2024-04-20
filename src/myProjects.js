@@ -113,7 +113,7 @@ export const myProjects = [
     projectImg: require("./Images/template3.png"),
     projectDesc: "template 3 using Html & css",
     projectLink:
-      "https://mahmoudkhairy402.github.io/Html-Css--Template--3/template3.html",
+      "https://mahmoudkhairy402.github.io/Html-Css--Template--3/template-3.html",
     rebo: "https://github.com/mahmoudkhairy402/Html-Css--Template--3",
     category: ["css"],
   },
