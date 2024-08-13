@@ -83,15 +83,15 @@ function Work() {
             </li>
             <li
               className={`breadcrumb-item category-item ${
-                activeLink === "mui" ? "active" : ""
+                activeLink === "redux" ? "active" : ""
               }`}
               onClick={() => {
-                handleLinkClick("mui");
-                fiterMyProjects("mui");
+                handleLinkClick("redux");
+                fiterMyProjects("redux");
               }}
               aria-current="page"
             >
-              material-Ui
+              Redux
             </li>
 
             <li

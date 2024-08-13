@@ -1,5 +1,13 @@
 export const myProjects = [
   {
+    projectName: "WannaMeal",
+    projectImg: require("./Images/wannameal.png"),
+    projectDesc: "Complete Meal Recommendation System ",
+    projectLink: "https://wannameal-2292b.web.app/",
+    rebo: "https://github.com/mahmoudkhairy402/wannameal-personal",
+    category: ["bootstrap", "react", "css", "redux"],
+  },
+  {
     projectName: "E-Commerce",
     projectImg: require("./Images/E-Commerce.png"),
     projectDesc: "Complete E-Commerce Using Redux-Toolkit",
@@ -20,10 +28,10 @@ export const myProjects = [
     projectName: "Prayer timer",
     projectImg: require("./Images/prayer.png"),
     projectDesc:
-      "prayer app for calculating pray time and the remaining time for every pray ,\n using react with vite , Mui",
-    projectLink: "https://vocal-macaron-068dd4.netlify.app",
+      "quran app for reading and listinig & calculating pray time and the remaining time for every pray ,\n using react with vite ",
+    projectLink: "https://prayer-d2195.web.app/",
     rebo: "https://github.com/mahmoudkhairy402/prayer-timing",
-    category: ["mui", "react"],
+    category: ["react", "bootstrap", "sass"],
   },
   {
     projectName: "Product Managment System",
