@@ -71,7 +71,7 @@ function Sidebar() {
         </div>
 
         <nav classname="nav">
-          <ul classname="nav-ul">
+          {/* <ul classname="nav-ul">
             <li classname="nav-li">
               <a href="#home">
                 <svg
@@ -173,7 +173,7 @@ function Sidebar() {
                 </svg>
               </a>
             </li>
-          </ul>
+          </ul> */}
         </nav>
 
         <span className="copyright">&copy; khairy 2023 </span>
