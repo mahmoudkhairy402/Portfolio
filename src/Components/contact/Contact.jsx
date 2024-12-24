@@ -5,7 +5,7 @@ import Lottie from "lottie-react";
 import doneAnimation from "../../animations/done.json";
 import loadingAnimation from "../../animations/loading.json";
 import contactAnimation from "../../animations/contact.json";
-function contact() {
+function Contact() {
   const [state, handleSubmit] = useForm("xdorvppw");
   return (
     <>
@@ -102,4 +102,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;

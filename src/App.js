@@ -8,10 +8,9 @@ const Home = lazy(() => import("./Components/Home/Home"));
 const About = lazy(() => import("./Components/about/About"));
 const Experience = lazy(() => import("./Components/experience/Experience"));
 const Work = lazy(() => import("./Components/work/Work"));
-const Contact = lazy(() => import("./Components/contact/Contact"));
+const Contact = lazy(() => import("./Components/contact/Contact.jsx"));
 const Sidebar = lazy(() => import("./Components/sidebar/Sidebar"));
 const Scroll = lazy(() => import("./Components/ScrollUp/Scroll"));
-const Mode = lazy(() => import("./Components/mode/mode"));
 const Notfound = lazy(() => import("./Components/notfound/Notfound"));
 
 function App() {

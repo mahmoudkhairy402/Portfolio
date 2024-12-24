@@ -1,11 +1,19 @@
 export const myProjects = [
   {
+    projectName: "Bioscope",
+    projectImg: require("./Images/bioscope.jpeg"),
+    projectDesc: "Complete scientific platform for students ",
+    projectLink: "https://bioscope1.com",
+    rebo: "",
+    category: ["bootstrap", "react", "css", "redux", "team"],
+  },
+  {
     projectName: "WannaMeal",
     projectImg: require("./Images/wannameal.png"),
     projectDesc: "Complete Meal Recommendation System ",
     projectLink: "https://wannameal-2292b.web.app/",
     rebo: "https://github.com/mahmoudkhairy402/wannameal-personal",
-    category: ["bootstrap", "react", "css", "redux"],
+    category: ["bootstrap", "react", "css", "redux", "team"],
   },
   {
     projectName: "E-Commerce",
@@ -25,7 +33,7 @@ export const myProjects = [
     category: ["bootstrap", "react", "team"],
   },
   {
-    projectName: "Prayer timer",
+    projectName: "Quran & Prayer timer",
     projectImg: require("./Images/prayer.png"),
     projectDesc:
       "quran app for reading and listinig & calculating pray time and the remaining time for every pray ,\n using react with vite ",
